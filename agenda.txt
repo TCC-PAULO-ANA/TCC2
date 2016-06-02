@@ -1,0 +1,102 @@
+Toda semana
+
+Reuniões sábado: 14:30h para revisar o que foi feito na semana
+Reunião com orientador: quarta feira 12:00h
+
+======================================================================
+
+Reunião com orientador 01/06
+	- mostrar o que foi feito
+	- pesquisas
+	resultado
+	- modelar o processo
+	- melhorar o q já foi feito
+
+=====================================================================
+semana 1/06 - 8/06
+
+> Marcar entrevistas
+	- CME (mandar email)
+	- Empresa que o Paulo falou
+	- algum hospital (ligar)
+	- falar com cpd
+
+> Escrever revisão bibliográfica
+	- manutenção (os dois)
+		- conceito (paulo)
+		- tipos (ana)
+		- normas (os dois)
+	- ciclo de vida, tempo médio de fallha (paulo)
+	- gestão de risco, iso 31000, ahp (ana)
+	- estado da arte - o que existe hoje (os dois)
+		- manutenção em instituições públicas (outras universidades) (ana)
+		- manutenção na indústria (ana)
+		- manutenção em hospitais (paulo)
+		- manutenção em orgãos públicos (trabalho do paulo) (paulo)
+		- já escrever considerando normas, gestão de riscos, ciclo de vida
+
+> Bibliografia
+	- já citar no texto
+	- separar o que realmente usou
+	- de preferência já no formato bibtex.
+=====================================================================
+
+Reunião com orientador 08/06
+	- validar o que foi escrito com o professor
+	- mostrar novas pesquisas
+
+=====================================================================
+
+semana 08/06 - 15/06
+
+> Metodologia
+	- Simulação
+	- estudo de caso
+	- mapear processo atual
+	- aplicar ahp, mttf.....
+	- aplicar iso 55000, iso 31000, ciclo de vida, gestão de risco
+
+> Bibliografia
+	- já citar no texto
+	- separar o que realmente usou
+	- de preferência já no formato bibtex.
+
+====================================================================
+
+Reunião com orientador 15/06
+	- mostrar o que arrumou
+	- validar o que foi feito
+
+====================================================================
+
+semana 15/06 - 22/06
+
+> Introdução
+> Resumo
+> Conclusão
+> Bibliografia
+> Slides
+
+====================================================================
+
+
+Comandos básicos do git
+
+git clone url_do_repositório
+git checkout TCC1 
+	- muda pra branch que a gente vai trabalhar esse semestre
+
+sempre que for trabalhar no git 
+
+1º)git pull origin TCC1 
+	- atualiza seu repositório local
+2º)git status
+	- mostra os arquivos que vc modificou
+3º)git add nome_do_arquivo
+	- adiciona os arquivos modificados
+	- não precisa adicionar todos
+4º)git commit -m "mensagem do commit"
+	- adiciona modificações no seu repositório local
+5º)git push origin TCC1
+	- atualiza repositório (servidor)
+
