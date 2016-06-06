@@ -1,30 +1,73 @@
 \chapter{Manutenção}
 \label{cap-manutencao}
 
-\section{Tipos}
+\section{Conceito}
 
-Existem diferentes tipos de manutenção,  Garrido(citar) diz que  cinco tipos foram distinguidos, e eles são diferentes e dependentes do contexto, da natureza da tarefa em que serão aplicados. Sendo eles: 
+\section{Tipos de Manutenção}
 
-\begin{enumarate}
-	\item \textbf{Manutenção Corretiva:} conjunto de atividades destinadas a corrigir defeitos encontrados nos equipamentos. São comunicados ao departamento de manutenção pelos usuários dos equipamentos.
-	\item \textbf{Manutenção Preventiva:} o objetivo é manter um certo nível de serviço no equipamento, para isso as intervenções são programadas. Os equipamentos são inspecionados sistematicamente.
-	\item \textbf{Manutenção Preditiva:} informa constantemente o estado e a capacidade operacional das instalações sabendo os valores de algumas variáveis.    
+Existem diferentes tipos de manutenção e eles são distintos e dependentes do contexto, da natureza da tarefa em que serão aplicados. Araújo \cite{araujo2015} traz a definição de quatro tipos de manutenção, sendo elas:
 
-%
-
-Já Araújo araújo2015(citar) define quatro tipos de manutenção, sendo elas:
 \begin{enumerate}
-	\item \textbf{Manutenção Corretiva:} é a intervenção quando ocorre uma falha, sendo que essa falha torna o equipamento indisponível ou com baixa confiabilidade, isso não siginifica que ela seja uma manutenção de emergência, pois existem duas classes de manutenção corretiva.
+	\item \textbf{Manutenção Corretiva:} é a intervenção quando ocorre uma falha, sendo que essa falha torna o equipamento indisponível ou com baixa confiabilidade, isso não significa que ela seja uma manutenção de emergência, pois existem duas classes de manutenção corretiva.
 		\begin{enumerate}
 			\item \textbf{manutenção corretiva não planejada:} nela a intervenção é imediata, sem tempo para preparação do serviço.
 			\item \textbf{manutenção corretiva planejada:} nela a intervenção no equipamento é programada. Pode-se optar pela operação do equipamento até ele quebrar, depende da decisão gerencial.
 		\end{enumerate}
 	\item \textbf{Manutenção Preventiva:} nesse tipo realiza-se a manutenção como objetivo de reduzir ou evitar a falha ou queda de desempenho do equipamento, seguindo um plano previamente elaborado, e são realizadas periodicamente. Ela procura evitar a ocorrência de falhas, por meio do conhecimento prévio de ações que devem ser tomadas.
-	\item \textbf{Manutenção Preditiva:} basea-se na modificação de um parâmetro de condição ou desempenho, seu acompanhameno segue uma sistemática. Utiliza instrumentos de manutenção, para previnir falhas em equipamentos ou sistemas por meio de parâmetros diversos, que irão permitir a operação contínua do equipamento pelo máximo tempo possível.
-	\item \textbf{Manutenção protiva:} tem como base a frequência na ocorrência da falha. É feito um histórico dessas ocorrências no equipamento e retiradas informações para saber qual a causa básica de falhas frequentes. Ela gera ações que está relacionadas a causa raíz da falha, com o objetivo de aumentar o tempo de vida do equipamento.
+	\item \textbf{Manutenção Preditiva:} consiste na modificação de um parâmetro de condição ou desempenho, seu acompanhamento segue uma sistemática. Utiliza instrumentos de manutenção, para prevenir falhas em equipamentos ou sistemas por meio de parâmetros diversos, que irão permitir a operação contínua do equipamento pelo máximo tempo possível.
+	\item \textbf{Manutenção proativa:} tem como base a frequência na ocorrência da falha. É feito um histórico dessas ocorrências no equipamento e retiradas informações para saber qual a causa básica de falhas frequentes. Ela gera ações que está relacionadas a causa raíz da falha, com o objetivo de aumentar o tempo de vida do equipamento.
 \end{enumerate}
 
+Além desses, Garrido \cite{garrido} traz um quinto tipo, a   \textbf{manutenção zero horas}, cuja definição é: \emph{"conjunto de tarefas com o objetivo de avaliar o equipamento em intervalos programados antes de aparecer qualquer falha, ou quando a confiabilidade do equipamento diminuiu consideravelmente, de modo que é arriscado fazer previsões de capacidade de produção. Esta avaliação baseia-se deixando o equipamento a zero horas de operação, isto é, como se o equipamento eram novos. As revisões deverão substituir ou reparar todos os itens sujeitos a desgaste. O objectivo é garantir, com alta probabilidade, um bom tempo de trabalho fixado antecipadamente."}
+
+Esses cinco tipos mostram conceitos diferentes, mas também muito próximos, trazendo uma certa dificuldade em pensar qual seria melhor para um determinado contexto a ser trabalhado. Muitas vezes eles podem se tornar complementares. Garrido ainda diz que é muito difícil encontrar uma aplicação para cada conceito, e que por isso muitas vezes é mais valoroso usar mais de um tipo ao contexto sendo trabalhado. Por isso ele traz a ideia de Modelos de Manutenção, que misturam os tipos acima citados e assim podem atender as necessidades de manutenção de um certo tipo de equipamento.
+
+\section{Modelos de Manutenção}
+
+A seguir serão explicados os modelos de manutenção definidos por Garrido.
+
+\begin{enumerate}
+	\item \textbf{Modelo Corretivo:} consiste no modelo mais básico, sendo aplicado em equipamentos com menor criticidade no seu uso, ou seja, seu uso não compromete fatalmente a tarefa à qual ele dá suporte. Os defeitos encontrados não são um problema econômico ou técnico. 
+	\item \textbf{Modelo Condicional:} utiliza as atividades do modelo corretivo, acrescentando uma série de testes que irão definir uma ação seguinte. Caso encontre-se algo errado nos testes realizados, é agendada uma intervenção. Esse modelo é aplicável em equipamentos pouco utilizados ou cujo a probabilidade de falha é pequena.
+	\item \textbf{Modelo Sistemático:} consiste em executar um conjunto de atividades, medições e experimentos independente do estado equipamento, para então reparar falhas que poderão surgir. É utilizado em equipamentos de média disponibilidade e nível de importância no sistema, onde sua falha possa trazer algum tipo de problema. Um exemplo de uso seria um reator descontínuo. 
+	\item \textbf{Modelo de Manutenção de Alta Disponibilidade:} é o modelo mais exaustivo, por ser aplicado em equipamentos que necessitem de uma disponibilidade acima de 90\%, esse tipo de equipamento gera altos custos na produção caso ocorra uma falha nele, pois caso ele tenha que ficar parado, pode comprometer as atividades que ele executa. Por isso não existe tempo para parar o equipamento, como exige os outros modelos citados. Assim são utilizadas técnicas da manutenção preditiva, para conhecer o estado do equipamento e também realizar manutenções programadas, com revisões completas, com um frequência anual ou superior, que tem o intuito de substituir peças sujeitas a desgastes ou com maior probabilidade de falhas. 
+	\\
+	Este modelo também traz a necessidade de se realizar manutenções corretivas e reparações provisórias, que manterão o equipamento funcionando até a próxima revisão. Exemplos de uso deste modelo: Fonos de alta temperatura e depósitos de reatores.
+\end{enumerate} 
 
 
-%
+\section{Normas}
+
+\begin{flushright}
+	“\textit{A normalização é tecnologia consolidada, que nos
+permite confiar e reproduzir infinitas vezes determinado
+procedimento, seja na área industrial, seja no campo de
+serviços, ou em programas de gestão, com mínimas
+possibilidades de errar...
+\\
+...
+\\
+Elaborar uma norma técnica é compartilhar
+conhecimento, promover a competitividade, projetar a
+excelência e suas melhores consequências nos planos
+econômico, social e ambiental.}”
+\\
+Pedro Buzatto Costa
+\\
+HISTÓRIA DA NORMALIZAÇÃO BRASILEIRA
+\end{flushright}
+
+Em 2004, foi publicada o PAS 55 pela BSI e revisada em 2008 para \textit{"Otimizar a gestão de ativos físicos"}, ela tem duas partes que foram traduzadas pela ABRAMAN como:
+
+\begin{enumerate}
+	\item \textbf{Parte 1:} Especificação para a gestão otimizada de ativos físicos;
+	\item \textbf{Parte 2:} Diretrizes para aplicação do PAS 55-1. 
+\end{enumerate} 
+
+O PAS não é uma norma, mas sim uma especificação com 28 requisitos e definições claras, foi criada  
+
+Baseada nela, em janeiro de 2014 foi aprovada a ISO 55000, o primeiro padrão internacional para gestão de ativos. A ISO é uma organização internacional e não gonvernamental independente, tendo adesão de 161 organismos necionais de normalização, sendo um deles a ABNT. Seu objetivo é construir padrões internacionais relevantes para o mercado e que deêm suporte a inovação e traga soluções para desafios globais .
+
+
+
 
