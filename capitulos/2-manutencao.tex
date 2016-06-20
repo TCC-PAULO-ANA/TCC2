@@ -1,7 +1,8 @@
 \chapter{Manutenção}
 \label{cap-manutencao}
 
-\section{Conceito}
+O European Federation of National Maintenance Societies (EFNMS) defini manutenção como a combinação de toda ação técnica, adminitrativa e gerenciável durante o ciclo de vida de um ativo, que se tenha a intenção de manter ou retaurar para o estado ao qual possa realizar uma função requerida. Dizendo ainda que a manutenção tem importância máxima para o negócio e o comércio, para o meio ambiente e em geral para saúde e segurança \cite{efnms}.
+
 
 \section{Tipos de Manutenção}
 
@@ -21,6 +22,7 @@ Existem diferentes tipos de manutenção e eles são distintos e dependentes do 
 Esses quatro tipos mostram conceitos diferentes, mas também muito próximos, trazendo uma certa dificuldade em pensar qual seria melhor para um determinado contexto a ser trabalhado. Muitas vezes eles podem se tornar complementares. Garrido \cite{garrido} ainda diz que é muito difícil encontrar uma aplicação para cada conceito, e que por isso muitas vezes é mais valoroso usar mais de um tipo ao contexto sendo trabalhado. Por isso ele traz a ideia de Modelos de Manutenção, que misturam os tipos acima citados e assim podem atender as necessidades de manutenção de um certo tipo de equipamento.
 
 \section{Modelos de Manutenção}
+\label{sec_modelos_manutencao}
 
 A seguir serão explicados os modelos de manutenção definidos por Garrido.
 
@@ -33,69 +35,53 @@ A seguir serão explicados os modelos de manutenção definidos por Garrido.
 	Este modelo também traz a necessidade de se realizar manutenções corretivas e reparações provisórias, que manterão o equipamento funcionando até a próxima revisão. Exemplos de uso deste modelo: Fonos de alta temperatura e depósitos de reatores.
 \end{enumerate} 
 
+\section{Indicadores de desempenho da manutenção}
 
-\section{Normas}
+Os Indicadores de desempenho também conhecidos como KPIs, da sigla em inglês Key Performance Indicators, são métricas que quantificam a performance das organizações nas mais diversas áreas, de acordo com seus objetivos e metas. Eles são utilizados para monitorar os resultados da empresa e servem como referência para o processo de tomada de decisão e a criação de estratégias de melhoria. 
 
-\begin{flushright}
-	“\textit{A normalização é tecnologia consolidada, que nos
-permite confiar e reproduzir infinitas vezes determinado
-procedimento, seja na área industrial, seja no campo de
-serviços, ou em programas de gestão, com mínimas
-possibilidades de errar...
-\\
-...
-\\
-Elaborar uma norma técnica é compartilhar
-conhecimento, promover a competitividade, projetar a
-excelência e suas melhores consequências nos planos
-econômico, social e ambiental.}”
-\\
-Pedro Buzatto Costa
-\\
-HISTÓRIA DA NORMALIZAÇÃO BRASILEIRA
-\end{flushright}
+A manutenção, como a produtividade e a qualidade, por exemplo, possui diversos indicadores para sua gestão. Neste trabalho serão abordados os tradicionalmente usados, pois guardam uma correlação positiva com o desempenho e segurança na empresa, todavia estes aos serem empregados devem ser individualizados para a função específica que se deseja controlar (MORTORELL et al. 1999). 
 
-A citação acima diz em poucas palavras a importância de se ter normas, padrões e especificações que possam assegurar a qualidade em diferentes áreas de conhecimento.
+Qualquer que seja a forma que tomam os indicadores, os valores obtidos sobre eficiência, produtividade, segurança e disponibilidade, tem dois propósitos principais: decidir sobre o destino dos recursos e avaliar o desempenho do sistema depois que os recursos foram usados (LÖFSTEN, 2000). Assim, a ferramenta portadora dos indicadores permite identificar os desvios no desempenho dos equipamentos, e o controle que integra o laço de retro alimentação, que todo sistema de gestão bem implementado deve possuir.
 
-Na área da manutenção e gestão de ativos não é diferente. A preocupação com ativos físicos tem se tornado cada vez mais importantes, pois observou-se que garantir a confiabilidade, desempenho, conservar e aumentar o tempo de vida deles pode trazer benefícios significantes, sendo um dos mais importantes, o custo, gastos que podem ser poupados.
+\subsection{Origem dos danos}
 
-\subsection{PAS 55}
+É fato que todos componentes das maquinas, equipamentos e instalações, bem como os prédios e as benfeitorias inevitavelmente se desgastarem ao longo tempo necessitando assim de um conjunto de tratativas e cuidados técnicos periódicos para se manterem em condições de pleno funcionamento, devido a isso a manutenção, hoje vista como área estratégica, assume uma importância fundamental da gestão dos ativos, com reflexos diretos nos nível de operação, logística, disponibilidade e confiabilidade dos meios produtivos. Consoante ao escopo deste trabalho entenda-se aqui ativos como os equipamentos eletroeletrônicos, todavia muitos dos princípios e conhecimentos aqui abordados são úteis a gestão eficiente de todos os demais ativos de uma organização. 
 
-Surgiu, em reposta a uma demanda da indútria, o documento PAS 55. Publicado em 2004 pela BSI e revisado em 2008, essa especificação é composta por definições claras e 28 requisitos, considerados necessários para implantar e auditar um eficiente sistema de gestão para todo o ciclo de vida de qualquer ativo físico. A PAS 55 foi dividido em duas parte, traduzidas pela ABRAMAN como:
+São múltiplas as causas que levam a deterioração e ao desgaste os ativos de uma organização, podendo ter natureza mecânica, elétrica, térmica, química ou operacional, sendo na maioria das vezes uma associação destas. Segundo Seeling \cite{seeling2000} as causas corriqueiras que merecem destaque são:
 
 \begin{itemize}
-	\item \textbf{Parte 1:} Especificação para a gestão otimizada de ativos físicos;
-	\item \textbf{Parte 2:} Diretrizes para aplicação do PAS 55-1. 
-\end{itemize} 
-
-Sua estrutura consiste em um ciclo baseado no PDCA, como mostra a figura abaixo.
-
-\textcolor{red}{colocar figura}
-
-
-A Figura 1 foi adaptada por \cite{valeria2013} e mostra a estrutura do Sistema de Gestão de Ativos. A PAS classifica 5 categorias de ativos:
-
-\begin{enumerate}
-	\item{Ativos Físicos}
-	\item{Ativos Humanos}
-	\item{Ativos de Informação}
-	\item{Ativos Financeiros}
-	\item{Ativos Intangíveis}
-\end{enumerate}
-
-Contudo seu escopo está focado nos \textbf{ativos físicos}. Os outros só são considerados caso estejam realacionados com os ativos.
-
-Segurança, confiabilidade, disponibilidade, infraestrutura e custo são associados a atividades contidas na gestão de ativos. 
-Realizar a gestão dos ativos é importante para, conhecer a confiabilidade e a disponibilidade dos sistemas e componentes críticos ao longo do tempo de operação, os riscos inerentes à operação e manutenção, as probabilidades de ocorrências de eventos não desejáveis que afetem a segurança das pessoas e do meio-ambiente.
+	\item o atrito entre peças móveis em operação;
+	\item os esforços realizados pelos componentes em funcionamento normal;
+	\item os esforços estáticos e dinâmicos suportados pelas estruturas;
+	\item o calor;
+	\item o frio;
+	\item a umidade;
+	\item a pressão;
+	\item a vibração;
+	\item a sujeira acumulada;
+	\item a corrosão pelo ataque químico dos elementos existentes no ambiente;
+	\item a oxidação (ferrugem);
+	\item a abrasão;
+	\item as intempéries que agem sobre os materiais expostos ao tempo.
+\end{itemize}
 
 
-\subsection{ISO 55000}
+A conseqüência cumulativa das fontes de desgaste, descritas acima, são os defeitos e as falhas. Sendo o defeito definido como a situação que não impede o funcionamento do equipamento, todavia pode acarretar a curto ou longo prazo a sua indisponibilidade, já a falha é descrita como as ocorrências que impedem o equipamento ou instalação de funcionar tornando-o indisponível, ou seja, é quando deixamos de executar certas tarefas, porque no momento em que o equipamento foi solicitado, ele falhou. Por esta razão, e tendo em vista que as falhas nos equipamentos podem representar grandes perdas para a imagem das organizações, a redução e o controle destas fontes de desgaste e deterioração são essenciais.
 
-A importânia da PAS 55 foi reconhecida quando baseada nela, em janeiro de 2014, foi aprovada a ISO 55000, o primeiro padrão internacional para gestão de ativos. 
+As raízes das falhas de um equipamento estão nos danos sofridos pelas suas peças ou componentes, pois normalmente um equipamento não quebra totalmente de uma vez, mas para de funcionar quando alguma parte primária de seu conjunto se danifica. A parte primária avariada pode estar dentro do hardware, em um componente ou ao longo de um circuito em diversos pontos, por exemplo, a fonte é uma parte vital para que um circuito funcione, assim como suas trilhas para a passagem de corrente elétrica.
 
-A ISO é uma organização internacional e não gonvernamental independente, tendo adesão de 161 organismos necionais de normalização, sendo um deles a ABNT. Seu objetivo é construir padrões internacionais relevantes para o mercado e que deêm suporte a inovação e traga soluções para desafios globais .
+Sendo assim, antes de pensar em manutenção e seus indicadores de performace que tanto podem contribuir para a melhoria da gestão eficiente dos ativos, as empresas e organizações publicas precisam conhecer em quais condições irão fazer uso seus equipamentos, e quais são suas condições ideais operação, pois precisam adotar ações adequadas e com o menor custo. Esta compreensão a auxiliará na tomada de decisão em dois momentos, no momento da aquisição e no do uso produtivo desses equipamentos, pois não é inteligente, nem economicamente atrativo fazer uso de equipamentos em condições diferentes das quais foi planejado, pois por muitas vezes pode ser observado, para equipamentos eletrônicos, que o custo médio de manutenção, ao longo de sua vida útil pode ser muito superior ao custo de aquisição do próprio equipamento. Entenda-se tempo de vida útil a fase de utilização do ciclo de vida do ativo, ou seja, é o período de tempo iniciado no momento de sua aquisição (entrada em operação), com duração estimada de tempo (meses ou anos) que possa cumprir corretamente a função técnica para o qual foi concebido, durante o qual o mesmo realiza um trabalho com rentabilidade. 
 
+Muitas são as considerações a serem feitas no momento da escolha de um equipamento eletroeletrônico, sendo algumas delas a disponibilidade de peças de reposição, qualidade, confiabilidade, manutenabilidade, dimensões físicas, infra-estrutura necessária, prazo de entrega, preço, treinamentos necessários para: instalação, operação e manutenção. 
 
+Do ponto de vista da organização, a melhor escolha é a que apresenta o menor custo de ciclo de vida (utilização) do ativo, e o maior tempo de operação sem manutenção. Isto é, os menores custos envolvidos na aquisição de equipamentos para testes, manutenção e partes de reposição (inclusive um equipamento completo), bem como o custo envolvido com a parada do equipamento no período da manutenção.
 
+\section{Modelagem da falha de equipamentos eletrônicos}
 
+Embora as maiorias das causas que levam os equipamentos ao desgaste estejam ligadas a seu uso, eventualmente, podem ter ocorrido problemas durante o seu processo de fabricação, ocasionando a produção de componentes fora da especificação e mais frágeis. Estes equipamentos quais provavelmente irão apresentar problemas prematuros, quando colocados em operação. De acordo com Sanches (2010, p. 19) os equipamentos que apresentam defeitos/falhas provenientes dos processos de fabricação apresentam problemas em um período inicial, que em média corresponde a 5\% da sua vida útil – período conhecido como falhas prematuras ou precoces.
+
+Ou quando se deseja melhorar as suas condições de uso, algumas delas estão relacionadas à escolha do equipamento mais indicado, ou quais modificações serão necessárias a serem feitas na infra-estrutura para adequadamente utilizá-lo.
+
+Restabelecer características construtivas originais dos equipamentos, garantindo a eles um nível de desempenho esperado através da manutenção. 
+Estas ações de correição e prevenção quando adotadas aumentam a eficiência operacional e o tempo de vida útil dos ativos da organização. 
 
