@@ -1,7 +1,108 @@
 \chapter{Manutenção}
 \label{cap-manutencao}
 
-O European Federation of National Maintenance Societies (EFNMS) defini manutenção como a combinação de toda ação técnica, administrativa e gerenciável durante o ciclo de vida de um ativo, que se tenha a intenção de manter ou retaurar para o estado ao qual possa realizar uma função requerida. Dizendo ainda que a manutenção tem importância máxima para o negócio e o comércio, para o meio ambiente e em geral para saúde e segurança \cite{efnms}.
+A manutenção pode ser considerada a atividade que mais passou por mudanças nos últimos anos. Isso é resultado da complexidade e diversidade das tarefas que devem ser realizadas pelos seus responsáveis. O aumento na diversidade de equipamentos eletrônicos que dão suporte a atividades corriqueiras e essências, e devem ser mantidos, é um dos grandes desafios que deve ser encarado pelas empresas e organizações.
+
+Equipamentos eletrônicos estão presentes em todos os momentos do cotidiano de um empresa, seja um computador, uma televisão, um projetor, entre outros. Como mantê-los de forma que eles sejam nossos aliados e não nossos inimigos? A resposta está em evoluir a manutenção junto com a quantidade e diversidade dos ativos da sua empresa.
+	
+Um trecho da introdução do livro de Kardec e Nascif, Manutenção - Função Estratégica, chama atenção por descrever exatamente a mudança primordial exigida no setor de manutenção, se o para paradigma anterior, e ainda atual na maioria das empresas, era: "O homem de manutenção sente-se bem quando executa um bom reparo", o novo paradigma é: "O homem de manutenção sente-se bem  quando não tem que fazer reparo porque conseguiu evitar todas as quebras não planejadas".
+	
+A manutenção irá extrapolar o seu próprio significado, que de acordo com o BSI \cite{british1993bs} é "A combinação de todas as ações técnicas e administrativas associadas destinadas a reter um item ou restaurá-lo em um estado no qual possa desempenhar sua função requerida". Manutenção será atrelada a inovação e não apenas a preservarção do estado de um ativo. É preciso pensar em como evitar e prever, o mau funcionamento, parada ou até perda de um ativo.
+	
+Como então alinhar a manutenção aos objetivos da organização, fazendo dela uma ferramenta poderosa de preservação e aumento do tempo de vida dos ativos da organização, resultando na diminuição de custos com consertos on demand, atividades paradas, entre outros. Este capítulo apresentará tipos de manutenções disponíveis, sobre gerenciamento de manutenção e suas aplicações.
+
+
+\section{Tipos de Manutenção}
+
+
+Kardec e Nascif citam seis tipos de manutenção, mostrados na Figura~\ref{tiposmanutencao}, que de forma geral englobam os tantos outros existentes. A Figura, resumi estes dtipos e como eles se relacionam.
+
+\graphicspath{{figuras/}}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{tipos-de-manutencao}
+\caption{Tipos de Manutenção \textbf{Fonte: Manutenção - Função Estratégica, 2009, pg. 38}}
+\label{tiposmanutencao}
+\end{figure}
+
+
+
+
+\begin{enumerate}
+	\item \textbf{Manutenção Corretiva}
+
+		\emph{"Manutenção Corretiva é a atuação para a correção da falha ou do desempenho menor do que esperado."} \cite{kardecnascif2010}
+
+		\emph{"Manutenção realizada após uma falha destinada a colocar um item em um estado onde possa executar uma função necessária de forma segura e eficiente"} \cite{british1993bs}
+
+		Ocorre em equipamentos com defeito ou que estão funcionando de forma diferentedo esperado. Sua principal ação é Corrigir ou Restaurar para o estado de funcionamento. Pode ser Planejada ou Não Planejada.
+
+		\begin{itemize}
+			\item \textbf{Manutenção Corretiva Não Planejada:} configura na correção da falha realizada de forma aleatória, após a o fato já ocorrido. Acarreta em custos altos, com a própria ação da correção, perda de qualidade do equipamento, interrupção das atividades onde o equipamento é necessário.
+			\item \textbf{Manutenção Corretiva Planejada:} configura na correção da falha realizada de forma aleatória, após a o fato já ocorrido. Acarreta em custos altos, com a própria ação da correção, perda de qualidade do equipamento, interrupção das atividades onde o equipamento é necessário.
+		\end{itemize}
+
+		\graphicspath{{figuras/}}
+		\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{corretiva}
+		\caption{Manutenção Corretiva \textbf{Fonte: Manutenção - Função Estratégica, 1998, pg. 35}}
+		\label{corretiva}
+		\end{figure}
+
+	\item \textbf{Manutenção Preventiva}
+
+		\emph{"Manutenção Preventiva é a atuação realizada de forma a reduzir ou evitar a falha ou queda no desempenho, obedecendo a um plano previamente elaborado, baseado em intervalos definidos de tempo."} \cite{kardecnascif2010}
+
+		A manutenção preventiva busca evitar a ocorrência de falhas. Sua adoção é mais adequada quando a reposição de equipamentos for simples, tiver custo alto de falhas e as falhas forem mais prejudiciais as atividades.
+
+		\graphicspath{{figuras/}}
+		\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{preventiva}
+		\caption{Manutenção Preventiva \textbf{Fonte: Manutenção - Função Estratégica, 1998, pg. 36}}
+		\label{preventiva}
+		\end{figure}
+
+
+	\item \textbf{Manutenção Preditiva}
+
+		\emph{"Manutenção Preditiva é a atuação realizada com base em modificações de parâmetros de condição ou desempenho, cujo acompanhamento obedece a uma sistemática."} \cite{kardecnascif2010}
+
+		Visa a operação do contínua do equipamento por mais tempo possível, as medições e verificações são realizadas com o equipamento em produção, ou seja, com ele funcionando e operando na suas atividades. 
+
+		Segundo Kardec e Nascif, indica-se na adoção da manutenção preditiva a análise dos fatores abaixo:
+
+			\begin{itemize}
+				\item Aspectos relacionados com a segurança pessoal e operacional.
+				\item Redução de custos pelo acompanhamento constante das condições dos equipamentos, evitando assim intervenções desnecessárias.
+				\item Manter os equipamentos operando, de modo seguro, por mas tempo.
+			\end{itemize}
+
+		\graphicspath{{figuras/}}
+		\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{preditiva}
+		\caption{Manutenção Preditiva \textbf{Fonte: Manutenção - Função Estratégica, 1998, pg. 37}}
+		\label{preditiva}
+		\end{figure}
+		
+
+	\item \textbf{Manutenção Detectiva}
+
+		\emph{"Manutenção Detectiva é a atuação efetuada em sistemas de proteção buscando detectar falhas ocultas ou não perceptíveis ao pessoal de operação e manutenção."} \cite{kardecnascif2010}
+
+		Detectar falhas ocultas é fundamental para garantir a confiabilidade, os especialistas verificam o sistema sem tirá-lo de operação, detectam falhas ocultas e podem corrigir a situação, com o sistema operando.
+
+
+\end{enumerate}
+
+
+
+\textbf{PARTE ANTIGA}
+
+
+A European Federation of National Maintenance Societies (EFNMS) define manutenção como a combinação de toda ação técnica, administrativa e gerencial que, durante o ciclo de vida de um ativo, tenha a intenção de mantê-lo ou restaurá-lo para o estado útil, realizando a função requerida. Diz, ainda, que a manutenção tem importância máxima para o negócio e o comércio, bem como para o meio ambiente e, em geral, para a saúde e a segurança \cite{efnms}.
 
 \section{Tipos de Manutenção}
 
@@ -44,17 +145,11 @@ Além de modelos que podem ser criados por cada organização, de acordo com a n
 
 Classificar os elementos ou criar modelos de manutenção, são formas de se facilitar o controle sobre os ativos e saber suas características e o papel que exercem no negócio.
 
-\section{Indicadores de desempenho da manutenção}
-
-Os Indicadores de desempenho também conhecidos como KPIs, da sigla em inglês Key Performance Indicators, são métricas que quantificam a performance das organizações nas mais diversas áreas, de acordo com seus objetivos e metas. Eles são utilizados para monitorar os resultados da empresa e servem como referência para o processo de tomada de decisão e a criação de estratégias de melhoria. 
-
-A manutenção, como a produtividade e a qualidade, por exemplo, possui diversos indicadores para sua gestão. Neste trabalho serão abordados os tradicionalmente usados, pois guardam uma correlação positiva com o desempenho e segurança na empresa, todavia estes ao serem empregados devem ser individualizados para a função específica que se deseja controlar \cite{martorell1999}. 
-
-Qualquer que seja a forma que tomam os indicadores, os valores obtidos sobre eficiência, produtividade, segurança e disponibilidade, tem dois propósitos principais: decidir sobre o destino dos recursos e avaliar o desempenho do sistema depois que os recursos foram usados \cite{lofsten1998}. Assim, a ferramenta portadora dos indicadores permite identificar os desvios no desempenho dos equipamentos, e o controle que integra o laço de retro alimentação, que todo sistema de gestão bem implementado deve possuir. 
-
 \subsection{Origem dos danos}
 
-É fato que todos componentes das máquinas, equipamentos e instalações, bem como os prédios e as benfeitorias inevitavelmente se desgastem ao longo tempo, necessitando assim de um conjunto de tratativas e cuidados técnicos periódicos para se manterem em condições de pleno funcionamento, devido a isso a manutenção, hoje vista como área estratégica, assume uma importância fundamental da gestão dos ativos, com reflexos diretos nos nível de operação, logística, disponibilidade e confiabilidade dos meios produtivos. Consoante ao escopo deste trabalho entenda-se aqui ativos como os equipamentos eletroeletrônicos, todavia muitos dos princípios e conhecimentos aqui abordados são úteis a gestão eficiente de todos os demais ativos de uma organização. 
+É fato que todos componentes das máquinas, equipamentos e instalações, bem como os prédios e as benfeitorias inevitavelmente se desgastem ao longo tempo, necessitando assim de um conjunto de tratativas e cuidados técnic
+
+os periódicos para se manterem em condições de pleno funcionamento, devido a isso a manutenção, hoje vista como área estratégica, assume uma importância fundamental da gestão dos ativos, com reflexos diretos nos nível de operação, logística, Disponibilidadeidade e confiabilidade dos meios produtivos. Consoante ao escopo deste trabalho entenda-se aqui ativos como os equipamentos eletroeletrônicos, todavia muitos dos princípios e conhecimentos aqui abordados são úteis a gestão eficiente de todos os demais ativos de uma organização. 
 
 São múltiplas as causas que levam a deterioração e ao desgaste dos ativos de uma organização, podendo ter natureza mecânica, elétrica, térmica, química ou operacional, sendo na maioria das vezes uma associação destas. Segundo Seeling \cite{seeling2000} as causas corriqueiras que merecem destaque são:
 
