@@ -1,0 +1,295 @@
+\begin{apendicesenv}
+
+\partapendices
+
+\chapter{Especificação dos Casos de Uso}
+\label{esp-uc}
+
+%---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Visualizar Gráficos}. \textbf{Fonte: Autor.}}
+\label{uc01}
+\begin{tabular}{ | p{5cm} | p{10cm} |  }
+\hline
+	\textbf{Caso de uso 01} & Visualizar Gráficos \\ \hline
+	\textbf{Descrição} & Sistema deve exibir um gráfico na tela principal do sistema (Figura~\ref{tela-principal}), com a situação de todos os equipamentos do sistema. E outro gráfico na tela de listagem dos equipamentos por especificação (Figura~\ref{tela-lista-eq}). Situação do equipamento pode \textbf{ser em uso, em manutenção e parado}. \\ \hline
+	\textbf{Ator} & Gestor e Técnico \\ \hline
+	\textbf{Pré-condições} & Já terem dados de equipamentos importados do SIPAT para o Sistema. \\ \hline
+	\textbf{Pós-condições} & Visualização dos gráficos nas telas definidas. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Entrar no Sistema e visualizar gráfico com a situação de todos os equipamentos do sistema.       
+									\item Visualizar Listagem dos equipamentos na Tela Principal (Figura~\ref{tela-principal}).
+									\item Clicar no botão \textbf{Visualizar}
+									\item Ser redirecionado para a Tela com a Listagem dos Equipamentos (Figura~\ref{tela-lista-eq}) de um determinada especificação.    
+									\item Visualizar Gráfico da situação dos equipamentos da especificação (Figura~\ref{tela-lista-eq}).
+								 \end{enumerate}   \\ \hline
+	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Visualizar Listagem com os equipamentos classificados por grupo e especificação}. \textbf{Fonte: Autor.}}
+\label{uc02}
+\begin{tabular}{ | p{5cm} | p{10cm} |  }
+\hline
+	\textbf{Caso de uso 02} & Visualizar Listagem com os equipamentos classificados por grupo e especificação. \\ \hline
+	\textbf{Descrição} & Na tela principal do sistema (Figura~\ref{tela-principal}), deve aparecer uma lista, abaixo do gráfico com os dados dos equipamentos, agrupados por sua especificação. Campos: \begin{itemize}
+															                    \item Grupo 
+															                    \item Especificação 
+															                    \item Quantidade 
+															                    \item Em Manutenção 
+															                    \item Em uso
+															                    \item Parados 
+															                    \item Botão \textbf{visualizar}. 
+															                    \end{itemize} \\ \hline
+	\textbf{Ator} & Gestor e Técnico \\ \hline
+	\textbf{Pré-condições} & Já terem dados de equipamentos importados do SIPAT para o Sistema. \\ \hline
+	\textbf{Pós-condições} & Visualização da listagem dos equipamentos com os campos definidos.. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Entrar no Sistema e na tela inicial visualizar a lista (Figura~\ref{tela-principal}).    
+									\item Lista deve estar abaixo do gráfico.
+									\item Ao clicar no botão \textbf{Visualizar}, ator deve ser redirecionado para tela da especificação (Figura~\ref{tela-lista-eq}).   
+								 \end{enumerate}   \\ \hline
+	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Visualizar Listagem dos equipamentos de uma especificação}. \textbf{Fonte: Autor.}}
+\label{uc03}
+\begin{tabular}{ | p{5cm} | p{10cm} |  }
+\hline
+	\textbf{Caso de uso 03} & Visualizar Listagem dos equipamentos de uma especificação. \\ \hline
+	\textbf{Descrição} & Na tela de uma especificação de equipamentos (Figura~\ref{tela-lista-eq}), deve aparecer uma lista, abaixo do gráfico (especificado no caso de uso 01) com os dados dos equipamentos. Campos: \begin{itemize}
+															                    \item Registro
+															                    \item Situação (em uso, em manutenção, parado) 
+															                    \item Próxima Manutenção 
+															                    \item Manutenções Realizadas 
+															                    \item Tipo de Manutenção
+															                    \item Botão \textbf{visualizar}. 
+															                    \end{itemize} \\ \hline
+	\textbf{Ator} & Gestor e Técnico \\ \hline
+	\textbf{Pré-condições} & Clicar no botão visualizar na página principal. \\ \hline
+	\textbf{Pós-condições} & Visualização da listagem dos equipamentos com os campos definidos. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Entrar no Sistema e na tela inicial visualizar a lista de Equipamentos (Figura~\ref{tela-principal}).    
+									\item Clicar no botão \textbf{Visualizar} e ser redirecionado para tela da especificação (Figura~\ref{tela-lista-eq}).  
+							        \item Lista deve estar abaixo do gráfico da tela.
+							        \item Ao clicar no botão \textbf{visualizar}, da listagem, o ator deve ser redirecionado para tela de menu do equipamento (Figura~\ref{tela-menu-eq}).
+								 \end{enumerate}   \\ \hline
+	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Visualizar Menu do Equipamento}. \textbf{Fonte: Autor.}}
+\label{uc04}
+\begin{tabular}{ | p{5cm} | p{10cm} |  }
+\hline
+	\textbf{Caso de uso 04} & Visualizar Menu do Equipamento. \\ \hline
+	\textbf{Descrição} & Ao clicar em visualizar, em um equipamento, deve ser mostrado uma página com o menu dele. Ícones: \begin{itemize}
+															                    \item Dados Cadastrais
+															                    \item Ordens de Serviço 
+															                    \item Tipo de Manutenção 
+															                    \item Indicadores 
+															                    \item Componentes Principais
+															                    \end{itemize} \\ \hline
+	\textbf{Ator} & Técnico \\ \hline
+	\textbf{Pré-condições} & Clicar no botão visualizar na página de especificação do equipamento. \\ \hline
+	\textbf{Pós-condições} & Visualização da Tela de Menu dos equipamentos. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Clicar em visualizar em um equipamento da lista (Figura~\ref{tela-lista-eq}).    
+									\item Visualizar os campos da tela (Figura~\ref{tela-menu-eq})
+							        \item Clicar em um ícone e ser direcionado para sua tela.
+								 \end{enumerate}   \\ \hline
+	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Visualizar Dados Cadastrais do Equipamento}. \textbf{Fonte: Autor.}}
+\label{uc05}
+\begin{tabular}{ | p{5cm} | p{10cm} |  }
+\hline
+	\textbf{Caso de uso 05} & Visualizar Dados Cadastrais do Equipamento. \\ \hline
+	\textbf{Descrição} & Ao clicar em dados cadastrais, na tela do equipamento, deve ser mostrado uma página com os dados. Os dados serão importados do SIPAT. \\ \hline
+	\textbf{Ator} & Técnico \\ \hline
+	\textbf{Pré-condições} & Nenhuma. \\ \hline
+	\textbf{Pós-condições} & Visualização dados de cadastro do equipamento. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Clicar em Dados Cadastrais (Figura~\ref{tela-menu-eq}).    
+									\item Ser redirecionado para tela de dados do equipamento (Figura~\ref{tela-dados-cad}).
+								 \end{enumerate}   \\ \hline
+	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Visualizar Dados Cadastrais do Equipamento}. \textbf{Fonte: Autor.}}
+\label{uc06}
+\begin{tabular}{ | p{5cm} | p{10cm} |  }
+\hline
+	\textbf{Caso de uso 06} & Visualizar Dados Cadastrais do Equipamento. \\ \hline
+	\textbf{Descrição} & Ao clicar em dados cadastrais, na tela do equipamento, deve ser mostrado uma página com os dados. Os dados serão importados do SIPAT. \\ \hline
+	\textbf{Ator} & Técnico \\ \hline
+	\textbf{Pré-condições} & Nenhuma. \\ \hline
+	\textbf{Pós-condições} & Visualização dados de cadastro do equipamento. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Clicar em Dados Cadastrais (Figura~\ref{tela-menu-eq}).    
+									\item Ser redirecionado para tela de dados do equipamento (Figura~\ref{tela-dados-cad}).
+								 \end{enumerate}   \\ \hline
+	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------%
+%-------------------------------------------------------------------------------------------------------------------------------%
+
+\chapter{Protótipos das Telas do Sistema}
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-principal}
+\caption{Protótipo da Tela Principal do Sistema. \textbf{Fonte: Autor.}}
+\label{tela-principal}
+\end{figure}
+
+%---------------------------------------------------------%
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-importar-equipamentos}
+\caption{Protótipo da Tela para Importar os Equipamentos Cadastrados no SIPAT. \textbf{Fonte: Autor.}}
+\label{tela-importar-equipamentos}
+\end{figure}
+
+%---------------------------------------------------------%
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-rel-gastos}
+\caption{Protótipo da Tela do Relatório dos Gastos realizados com manutenções. \textbf{Fonte: Autor.}}
+\label{tela-rel-gastos}
+\end{figure}
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-rel-os}
+\caption{Protótipo da Tela do Relatório de Ordens de Serviço. \textbf{Fonte: Autor.}}
+\label{tela-rel-os}
+\end{figure}
+
+%---------------------------------------------------------%
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-prox-man}
+\caption{Protótipo da Tela das Manutenções a serem realizadas. \textbf{Fonte: Autor.}}
+\label{tela-prox-man}
+\end{figure}
+
+%---------------------------------------------------------%
+
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-abrir-os}
+\caption{Protótipo da Tela para Abrir uma Nova Ordem de Serviço. \textbf{Fonte: Autor.}}
+\label{tela-abrir-os}
+\end{figure}
+
+%---------------------------------------------------------%
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-lista-eq}
+\caption{Protótipo da Tela da Listagem de Todos os Equipamentos de uma Especificação. \textbf{Fonte: Autor.}}
+\label{tela-lista-eq}
+\end{figure}
+
+%---------------------------------------------------------%
+
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-menu-eq}
+\caption{Protótipo da Tela com o Menu do Equipamento. \textbf{Fonte: Autor.}}
+\label{tela-menu-eq}
+\end{figure}
+
+%---------------------------------------------------------%
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-dados-cad}
+\caption{Protótipo da Tela dos Dados do Equipamento Cadastrados pelo SIPAT. \textbf{Fonte: Autor.}}
+\label{tela-dados-cad}
+\end{figure}
+
+
+%---------------------------------------------------------%
+
+Tela - Indicadores do Equipamento
+
+
+
+%---------------------------------------------------------%
+
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-comp-princ}
+\caption{Protótipo da Tela para Adicionar os Componentes Principais do Equipamento. \textbf{Fonte: Autor.}}
+\label{tela-comp-princ}
+\end{figure}
+
+%---------------------------------------------------------%
+
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-tipo-man}
+\caption{Protótipo da Tela para Escolha do Tipo de Manutenção que será realizada no Equipamento. \textbf{Fonte: Autor.}}
+\label{tela-tipo-man}
+\end{figure}
+
+%---------------------------------------------------------%
+
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-os-eq}
+\caption{Protótipo da Tela de Listagem das Ordens de Serviço já Abertas para o Equipamento. \textbf{Fonte: Autor.}}
+\label{tela-os-eq}
+\end{figure}
+
+\end{apendicesenv}
