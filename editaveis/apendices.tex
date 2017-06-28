@@ -142,24 +142,261 @@
 
 \begin{table}[H]
 \centering
-\caption{Caso de Uso - \textit{Visualizar Dados Cadastrais do Equipamento}. \textbf{Fonte: Autor.}}
+\caption{Caso de Uso - \textit{Adicionar Componentes Principais do Equipamento}. \textbf{Fonte: Autor.}}
 \label{uc06}
 \begin{tabular}{ | p{5cm} | p{10cm} |  }
 \hline
-	\textbf{Caso de uso 06} & Visualizar Dados Cadastrais do Equipamento. \\ \hline
-	\textbf{Descrição} & Ao clicar em dados cadastrais, na tela do equipamento, deve ser mostrado uma página com os dados. Os dados serão importados do SIPAT. \\ \hline
+	\textbf{Caso de uso 06} & Adicionar Componentes Principais do Equipamento. \\ \hline
+	\textbf{Descrição} & Ao clicar em Componentes Adicionais, na tela do equipamento, deve ser mostrada uma página para serem adicionados componentes do equipamento, que precisão ser observados, na manutenção preventiva. Campos: \begin{itemize}
+															                    \item Adicionar (botão)
+															                    \item Nome
+															                    \item Departamento 
+															                    \item Estado 
+															                    \item observações
+															                    \item Editar (botão)
+															                    \end{itemize} \\ \hline
 	\textbf{Ator} & Técnico \\ \hline
-	\textbf{Pré-condições} & Nenhuma. \\ \hline
-	\textbf{Pós-condições} & Visualização dados de cadastro do equipamento. \\ \hline
+	\textbf{Pré-condições} & estar na tela do equipamento. \\ \hline
+	\textbf{Pós-condições} & Ter componente adicionado na listagem. \\ \hline
 	\textbf{Fluxos de eventos} & \begin{enumerate}
-									\item Clicar em Dados Cadastrais (Figura~\ref{tela-menu-eq}).    
-									\item Ser redirecionado para tela de dados do equipamento (Figura~\ref{tela-dados-cad}).
+									\item Clicar em Componentes Principais (Figura~\ref{tela-menu-eq}).    
+									\item Ser redirecionado para tela de adicionar o componente. (Figura~\ref{tela-comp-princ}).
+									\item Inserir nome do componente.
+									\item Clicar em Adicionar.
+									\item Visualizar componente adicionado na listagem.
+									\item Listagem deve conter os campos (nome, departamento, estado, observações).
+									\item Conseguir editar as informações.
+									\item Esses dados da listagem, devem ser puxados da ordem de serviço aberta para manutenção.
 								 \end{enumerate}   \\ \hline
 	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
 \end{tabular}
 \end{table}
 
 %---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Manter Ordens de Serviço}. \textbf{Fonte: Autor.}}
+\label{uc07}
+\begin{tabular}{ | p{5cm} | p{10cm} |  }
+\hline
+	\textbf{Caso de uso 07} & Manter Ordens de Serviço. \\ \hline
+	\textbf{Descrição} & Ao clicar em Ordens de Serviço, o técnico deverá ser redirecionado para uma página que terá uma lista com todas as ordens de serviços abertas para o equipamento e deve conseguir abrir uma nova ordem de serviço. Na ordem de serviço devem existir os campos para logar as horas trabalhadas e adicionar custos de peças para substituição. Campos: \begin{itemize}
+															                    \item Abrir Nova Ordem de Serviço (botão)
+															                    \item Aberta por
+															                    \item Departamento 
+															                    \item Data de Início 
+															                    \item Data de Fechamento
+															                    \item Situação
+															                    \item ver (botão)
+															                    \end{itemize} \\ \hline
+	\textbf{Ator} & Técnico \\ \hline
+	\textbf{Pré-condições} & estar na tela do equipamento. \\ \hline
+	\textbf{Pós-condições} & Ver listagem, conseguir abrir nova ordem de serviço e visualizar as da listagem. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Clicar em Ordens de Serviço (Figura~\ref{tela-menu-eq}).    
+									\item Ser redirecionado para tela de ordens de Serviço. (Figura~\ref{tela-os-eq}).
+									\item Clicar em Abrir Nova Ordem de Serviço.
+									\item Ser redicionado para página (Figura~\ref{tela-abrir-os}.
+									\item Visualizar campos para o preenchimento da ordem de serviço.
+									\item Listagem deve conter os campos citados na descrição.
+									\item Conseguir visualizar ordem de serviço.
+									\item Esses dados da listagem, devem ser puxados da ordem de serviço aberta para manutenção.
+								 \end{enumerate}   \\ \hline
+	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Escolher Tipo de Manutenção}. \textbf{Fonte: Autor.}}
+\label{uc08}
+\begin{tabular}{ | p{3cm} | p{13cm} |  }
+\hline
+	\textbf{Caso de uso 08} & Escolher Tipo de Manutenção. \\ \hline
+	\textbf{Descrição} & Técnico conseguir escolher qual tipo de manutenção será realizada no equipamento. O tipo poderá ser escolhido por equipamento (individualmente) ou para um lote de equipamentos (por especificação). A escolha por lote, será feita, por meio de um questionário, que sugerir a melhor estratégia para o tipo de equipamento. O tipo padrão de manutenção é a corretiva. Ou seja, assim que os equipamentos são importados, eles são classificados com esse tipo, pra mudar, precisa ir para a tela de tipo de manutenção. Campos: \begin{itemize}
+															                    \item Preventiva
+															                    \item Corretiva
+															                    \item Período de realização da manutenção
+															                    \item Data Inicial 
+															                    \item Escolher data da compra
+															                    \item A próxima manutenção será em
+															                    \item Aplicar (botão)
+															                    \item Escolher Tipo de Manutenção (botão)
+															                    \item Agendar (botão)
+															                    \end{itemize} \\ \hline
+	\textbf{Ator} & Técnico \\ \hline
+	\textbf{Pré-condições} & estar na tela do equipamento. \\ \hline
+	\textbf{Pós-condições} & Escolher tipo de manutenção. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Clicar em Tipo de Manutenção (Figura~\ref{tela-menu-eq}).    
+									\item Visualizar os tipos Corretiva e Preventiva.
+									\item Selecionar Corretiva e clicar em aplicar.
+									\item Selecionar preventiva, preencher os campos e clicar em aplicar.
+									\item Escolher tipo por lote: entrar na tela da listagem de equipamentos por especificação (Figura~\ref{tela-lista-eq}).
+									\item Clicar no botão Escolher Tipo de Manutenção.
+									\item Ser redirecionado para tela (Figura~\ref{tela-quest-man})
+									\item Se manutenção sugerida for a preventiva, clicar em agendar.
+									\item Ser redirecionado para tela de tipo de manutenção (Figura~\ref{tela-tipo-man}).
+									\item Preencher período e data de início.
+									\item Se tipo de manutenção sugerido for corretiva, clicar em Aplicar.
+								 \end{enumerate}   \\ \hline
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Visualizar Indicadores}. \textbf{Fonte: Autor.}}
+\label{uc09}
+\begin{tabular}{ | p{5cm} | p{10cm} |  }
+\hline
+	\textbf{Caso de uso 09} & Visualizar Indicadores. \\ \hline
+	\textbf{Descrição} & O sistema mostrará para o técnico e gestor, indicadores de custo e de taxa de falhas de cada equipamento. O custo será calculado por meio das horas logadas pelo técnico na OS aberta para o reparo e também por custo de peças que precisarem ser substituídas. A taxa de falhas usrá os conceitos de TMF, TMEF e TMR, para mostrar confiabilidade, desempenho e confiabilidade do equipamento. Serão mostrados gráficos para um acompnhamento visual da progressão dos indicadores. Campos: \begin{itemize}
+															                    \item Preço do Equipamento
+															                    \item Custo máximo das manutenções
+															                    \item Custo da manutenção está em:
+															                    \item Tempo Médio de Falha 
+															                    \item Tempo Médio entre Falhas
+															                    \item Tempo Médio de Reparo
+															                    \item Gráficos de acompanhamento
+															                    \end{itemize} \\ \hline
+	\textbf{Ator} & Técnico e Gestor \\ \hline
+	\textbf{Pré-condições} & estar na tela do equipamento. \\ \hline
+	\textbf{Pós-condições} & Visualizar campos de custo e taxa de falha. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Clicar em Indeicadores (Figura~\ref{tela-menu-eq}).    								
+									\item Ser redirecionado para tela de Tipo de Manutenção. (Figura~\ref{tela-indicador}).
+									\item Visualizar Campos e gráfico de custo e taxa de falha.
+								 \end{enumerate}   \\ \hline
+	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Importar Equipamentos do SIPAT}. \textbf{Fonte: Autor.}}
+\label{uc10}
+\begin{tabular}{ | p{5cm} | p{10cm} |  }
+\hline
+	\textbf{Caso de uso 10} & Importar Equipamentos do SIPAT. \\ \hline
+	\textbf{Descrição} & Técnico conseguir visualizar equipamentos a serem importados e atualizar a lista de equipamento. Campos: \begin{itemize}
+															                    \item Grupo
+															                    \item Especificação
+															                    \item Departamento
+															                    \item Incluir 
+															                    \item Atualizar Lista (botão)
+															                    \item Importar (botão)
+															                    \end{itemize} \\ \hline
+	\textbf{Ator} & Técnico \\ \hline
+	\textbf{Pré-condições} & Nenhuma \\ \hline
+	\textbf{Pós-condições} & Conseguir importar equipamentos cadastrados no SIPAT para o sistema de manutenção. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Clicar em Importar Equipamentos (menu fixo no topo das telas).    
+									\item Ser redirecionado para tela de importação. (Figura~\ref{tela-importar-equipamentos}).
+									\item Visualizar listagem com os equipamentos disponíveis para importação.
+									\item Clicar em importar.
+									\item Conseguir atualizar a lista.
+									\item Conseguir incluir todos os equipamentos de uma vez só.
+									\item Conseguir selecionar quais equipamentos quer importar.
+								 \end{enumerate}   \\ \hline
+	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Visualizar Menu no topo das telas}. \textbf{Fonte: Autor.}}
+\label{uc11}
+\begin{tabular}{ | p{5cm} | p{10cm} |  }
+\hline
+	\textbf{Caso de uso 11} & Visualizar Menu no topo das telas. \\ \hline
+	\textbf{Descrição} & Deve ser visualizado uma barra de menu fixa em todas as telas do sistema. Campos: \begin{itemize}
+															                    \item Importar Equipamentos
+															                    \item Relatórios
+															                    \item Próximas Manutenções
+															                    \item Abrir Nova Ordem de Serviço
+															                    \end{itemize} \\ \hline
+	\textbf{Ator} & Técnico e Gestor \\ \hline
+	\textbf{Pré-condições} & Nenhuma \\ \hline
+	\textbf{Pós-condições} & Visualizar o menu fixo em todas as telas do sistema. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Entrar no sistema.  
+									\item Navegar pelas telas e visualizar o menu em todas elas.
+									\item Visualizar os campos especificados na descrição.
+								 \end{enumerate}   \\ \hline
+	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Visualizar Relatórios}. \textbf{Fonte: Autor.}}
+\label{uc12}
+\begin{tabular}{ | p{5cm} | p{10cm} |  }
+\hline
+	\textbf{Caso de uso 12} & Visualizar Relatórios. \\ \hline
+	\textbf{Descrição} & Visualizar relatório de gastos, que pode ser mensal e anual. Relatório de ordens de serviço, que mostrará as abertas e fechadas por mês e ano. Campos: \begin{itemize}
+															                    \item Tipo de relatório (gastos totais, ordens de serviço)
+															                    \item período (mensal e anual)
+															                    \item gastos com manutenções preventivas
+															                    \item gastos com manutenções corretivas
+															                    \item total de gastos
+															                    \item ordens de serviço abertas 
+															                    \item ordens de serviço fechadas
+															                    \end{itemize} \\ \hline
+	\textbf{Ator} & Técnico e Gestor \\ \hline
+	\textbf{Pré-condições} & Nenhuma \\ \hline
+	\textbf{Pós-condições} & Visualizar relatórios. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Clicar em Relatório (menu fixo no topo das telas).
+									\item ser redirecionado para  tela de relatórios (Figura~\ref{tela-rel-os} e Figura~\ref{tela-rel-gastos}) 
+									\item Conseguir filtrar tipo de relatório.
+									\item Só aparecer na tela, os campos inseridos nos filtros.
+								 \end{enumerate}   \\ \hline
+	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------%
+
+\begin{table}[H]
+\centering
+\caption{Caso de Uso - \textit{Visualizar lista com manutenções a serem feitas}. \textbf{Fonte: Autor.}}
+\label{uc13}
+\begin{tabular}{ | p{5cm} | p{10cm} |  }
+\hline
+	\textbf{Caso de uso 13} & Visualizar lista com manutenções a serem feitas. \\ \hline
+	\textbf{Descrição} & Mostrar listagem com todas as manutenções agendadas e corretivas da data d corrente para frente. A lista deve ser atualizada diariamente, retirando sempre as manutenções que já foram realizadas. Campos: \begin{itemize}
+															                    \item Registro
+															                    \item Especificação
+															                    \item Departamento
+															                    \item Tipo
+															                    \item Data
+															                    \item Prioridade 
+															                    \end{itemize} \\ \hline
+	\textbf{Ator} & Técnico e Gestor \\ \hline
+	\textbf{Pré-condições} & Nenhuma \\ \hline
+	\textbf{Pós-condições} & Visualizar relatórios. \\ \hline
+	\textbf{Fluxos de eventos} & \begin{enumerate}
+									\item Clicar em Próximas Manutenções (menu fixo no topo das telas).
+									\item Ser redirecionado para  tela da listagem (Figura~\ref{tela-prox-man}).
+									\item Visualizar listagem com campos da descrição.
+								 \end{enumerate}   \\ \hline
+	\textbf{Pontos de Extensão} & Nenhum. \\ \hline
+\end{tabular}
+\end{table}
+
+
 %-------------------------------------------------------------------------------------------------------------------------------%
 
 \chapter{Protótipos das Telas do Sistema}
@@ -183,6 +420,7 @@
 \end{figure}
 
 %---------------------------------------------------------%
+\pagebreak
 
 \graphicspath{{figuras/prototipos/}}
 \begin{figure}[H]
@@ -191,6 +429,8 @@
 \caption{Protótipo da Tela do Relatório dos Gastos realizados com manutenções. \textbf{Fonte: Autor.}}
 \label{tela-rel-gastos}
 \end{figure}
+
+\pagebreak
 
 \graphicspath{{figuras/prototipos/}}
 \begin{figure}[H]
@@ -255,9 +495,21 @@
 
 %---------------------------------------------------------%
 
-Tela - Indicadores do Equipamento
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-ind-custo}
+\caption{Protótipo da Tela do Indicador de Custo. \textbf{Fonte: Autor.}}
+\label{tela-ind-custo}
+\end{figure}
 
-
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-ind-falha}
+\caption{Protótipo da Tela do Indicador de Falha. \textbf{Fonte: Autor.}}
+\label{tela-ind-falha}
+\end{figure}
 
 %---------------------------------------------------------%
 
@@ -279,6 +531,14 @@ Tela - Indicadores do Equipamento
 \includegraphics[width=1.0\textwidth]{tela-tipo-man}
 \caption{Protótipo da Tela para Escolha do Tipo de Manutenção que será realizada no Equipamento. \textbf{Fonte: Autor.}}
 \label{tela-tipo-man}
+\end{figure}
+
+\graphicspath{{figuras/prototipos/}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{tela-quest-man}
+\caption{Protótipo da Tela do Questionário para o sistema sugerir o tipo de manutenção mais adequado para um lote de equipamentos. \textbf{Fonte: Autor.}}
+\label{tela-quest-man}
 \end{figure}
 
 %---------------------------------------------------------%
