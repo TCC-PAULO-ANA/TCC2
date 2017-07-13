@@ -7,28 +7,28 @@ Dentre as áreas da gestão de ativos, a manutenção é geralmente encarada com
 
 A efetiva gestão da manutenção tem se tornado cada vez mais necessária nas organizações, na medida em que a execução dos processos com eficiência contribuem para a otimização dos recursos e a redução dos desperdícios.  Neste sentido, a correta rotina de manutenções dos ativos e instalações se faz importante porque o custo de se realizar uma manutenção regular pode se tornar muito pequeno quando comparado ao custo de uma interrupção na produção ou atividade.
 
-Na obra The Importance of Maintenance , Steve krar \cite{krar2009} definiu como sendo um dos principais propósitos da manutenção, garantir que todos os equipamentos estejam funcionando com 100\% de eficência o tempo todo, por meio de inspeções diárias e pequenos ajustes, os quais ajudarão na detecção de problemas menores, diminuindo a chance de esses problemas se tornarem maiores ou até incorrigíveis. Krar diz ainda que para se atingir uma manutenção regular e eficaz, é preciso que haja participação de todos, desde o alto executivo até as pessoas do operacional.
+Na obra The Importance of Maintenance \cite{krar2009}, Steve krar definiu como sendo um dos principais propósitos da manutenção garantir que todos os equipamentos estejam funcionando com 100\% de eficiência o tempo todo, por meio de inspeções diárias e pequenos ajustes, os quais ajudarão na detecção de problemas menores, diminuindo a chance de esses problemas se tornarem maiores ou até incorrigíveis. Krar diz ainda que para se atingir uma manutenção regular e eficaz, é preciso que haja participação de todos, desde o alto executivo até as pessoas do operacional.
 
-Neste contexto se insere o objeto de estudo deste trabalho: A manutenção de equipamentos eletrônicos da Universidade de Brasília – UnB. Esta universidade detém diversos laboratórios de pesquisa e certificação de alto valor e tecnologia, com grande número de aparelhos e equipamentos científicos de sistemas complexos. Todavia, como outras instituições públicas de ensino superior, a Unb adotou políticas para a aquisição de um parque cientifico e tecnológico, mas desconsiderou aspectos necessários ao não verificar a existência de meios humanos e materiais para a correta manutenção deste bens. Além disso, dispõe de processos de gestão de manutenções pouco informatizados, não possuindo indicadores de desempenhos claros que auxiliem seus gestores a tomada de decisão.
+Neste contexto se insere o objeto de estudo deste trabalho: a manutenção de equipamentos eletrônicos da Universidade de Brasília – UnB. Esta universidade detém diversos laboratórios de pesquisa e certificação de alto valor e tecnologia, com grande número de aparelhos e equipamentos científicos de sistemas complexos. Todavia, como outras instituições públicas de ensino superior, a UnB adotou políticas para a aquisição de um parque cientifico e tecnológico, mas desconsiderou aspectos necessários ao não verificar a existência de meios humanos e materiais para a correta manutenção deste bens. Além disso, dispõe de processos de gestão de manutenções pouco informatizados, não possuindo indicadores de desempenhos claros que auxiliem seus gestores a tomada de decisão.
 
-Segundo \cite{limacastilho2006} a falta de manutenção adequada, no caso particular da Universidade de Brasília,  reflete numa taxa de indisponibilidade exagerada dos equipamentos e instalações importantes para os laboratórios de ensino, pesquisa e apoio administrativo, tendo como conseqüência a diminuição da capacidade produtiva da instituição e a insatisfação daqueles que dependem desse serviço. Assim, a qualidade dos serviços oferecidos pela Diretoria de Manutenção de Equipamentos – DIMEQ, unidade responsável por prover a manutenção e o reparo de equipamentos da Universidade, fica comprometida. 
+Segundo \cite{limacastilho2006}, a falta de manutenção adequada, no caso particular da Universidade de Brasília,  reflete numa taxa de indisponibilidade exagerada dos equipamentos e instalações importantes para os laboratórios de ensino, pesquisa e apoio administrativo, tendo como consequência a diminuição da capacidade produtiva da instituição e a insatisfação daqueles que dependem desse serviço. Assim, a qualidade dos serviços oferecidos pela Diretoria de Manutenção de Equipamentos – DIMEQ, unidade responsável por prover a manutenção e o reparo de equipamentos da Universidade, fica comprometida. 
 
-Portanto, este trabalho tem como escopo fornecer fundamentos e indicadores de desempenho que auxiliem na gestão da manutenção dos equipamentos da Universidade, mais precisamente dos equipamentos eletrônicos, que possuem componentes eletrônicos na maioria dos seus circuitos, tais como: Equipamentos biomédicos, de análise clínica, de laboratório, de som e de imagem, e outros de infra-estrutura de rede e comunicação.
+Portanto, este trabalho tem como escopo fornecer fundamentos e indicadores de desempenho que auxiliem na gestão da manutenção dos equipamentos da Universidade, mais precisamente dos equipamentos eletrônicos, que possuem componentes eletrônicos na maioria dos seus circuitos, tais como: equipamentos biomédicos, de análise clínica, de laboratório, de som e de imagem, e outros de infraestrutura de rede e comunicação.
 
 A manutenção, que será melhor definida no Capítulo~\ref{cap-manutencao}, consiste na aplicação de técnicas para manter ou restaurar um ativo para o estado que ele possa realizar as funções requeridas. A gestão da manutenção seria, então, o controle, o planejamento e a coordenação da aplicação dessas técnicas para que se possa ter ativos gerando resultados positivos e de acordo com o esperado.
 
-Atualmente a Universidade de Brasília utiliza o Sistema de Informações Patrimoniais (SIPAT) para gerenciar a manuteção de seus ativos, bem como para cadastrar o bem adquirido e o seu histórico de manutenção, registrar o acompanhamento do equipamento no período de garantia e atualizar os dados técnicos. Todavia, tais funcionalidades não permitem prever falhas dos equipamentos, a criticidade de se ter o equipamento parado por causa da manutenção, o custo de se ter esse equipamento parado e a consequência de sua ausência nas atividades que ele suporta. 
+Atualmente, a Universidade de Brasília utiliza o Sistema de Informações Patrimoniais (SIPAT) para gerenciar a manutenção de seus ativos, bem como para cadastrar o bem adquirido e o seu histórico de manutenção, registrar o acompanhamento do equipamento no período de garantia e atualizar os dados técnicos. Todavia, tais funcionalidades não permitem prever falhas dos equipamentos, a criticidade de se ter o equipamento parado por causa da manutenção, o custo de se ter esse equipamento parado e a consequência de sua ausência nas atividades que ele suporta. 
 
 Dessa forma, procura-se encontrar nesse trabalho fundamentos para que se possa implementar uma gestão da manutenção eficiente na UnB. Para tanto é proposta uma solução informatizada que por meio de indicadores, possa prever quando o equipamento irá falhar, quando deverá ser realizada a manutenção, quais os tipos de manutenção são adequados e mais eficazes a partir dos custos de cada opção. Espera-se, ainda, que a solução forneça subsídios aos gestores na busca da decisão mais acertada acerca da continuidade da realização de manutenções em um determinado equipamento ou a sua substituição. Serão utilizados na solução conceitos como Tempo Médio de Falha, Tempo Médio de Reparo, Tempo Médio Entre Falhas, Disponibilidade, Confiabilidade, Satisfação do Cliente e Custo. 
 
-Para modelar a proposta foi pesquisado e estudado sobre ferramentas para gerenciamento de manutenção. Encontrando-se então os CMMS, do inglês Computerized Maintenance Management System, que são ferramentas voltadas para gestão da manutenção. Por isso o trabalho busca propor uma ferramenta que possua caracterísicas comuns a esse tipo de software e com adequações as necessidades do setor de manutenção da UnB. 
+Para modelar a proposta foi pesquisado e estudado sobre ferramentas para gerenciamento de manutenção. Encontrando-se então os CMMS, do inglês Computerized Maintenance Management System, que são ferramentas voltadas para gestão da manutenção. Por isso o trabalho busca propor uma ferramenta que possua características comuns a esse tipo de software e com adequações as necessidades do setor de manutenção da UnB.
 
 
 %------------------------------------------------------------------------------%
 
 \section{Problema}
 
-Falta de um sistema computadorizado, voltado para o setor de manutenção, que auxilie na gestão da manutenção de forma eficaz e também na tomada de decisão, por meio de indicadores de desempenho. Assim como, auxiliar na tomada de decisões quanto ao tipo de manutenção que será aplicada a esses equipamentos ou quanto a sua substuição, levando em consideração o custo da escolha. 
+Falta de um sistema computadorizado, voltado para o setor de manutenção, que auxilie na gestão da manutenção de forma eficaz e também na tomada de decisão, por meio de indicadores de desempenho. Assim como, auxiliar na tomada de decisões quanto ao tipo de manutenção que será aplicada a esses equipamentos ou quanto a sua substituição, levando em consideração o custo da escolha. 
 
 
 %------------------------------------------------------------------------------%
@@ -61,9 +61,8 @@ Os objetivos específicos do trabalho são:
 
 %-----------------------------------------------------------%
 
-\chapter{Metodologia}
+\section{Metodologia}
 
-O capítulo aborda quais as técnicas foram utilizadas para que os objetivos do trabalho fossem alcançados.
 
 Para condução do trabalho, foi adotado o método de pesquisas exploratórias, para que fosse obtida maior familiaridade com o problema a ser resolvido. Segundo, Gil \cite{gil2002elaborar}, esse tipo de pesquisa busca tornar o problema mais explícito, aprimorando ideias e considerando os mais variados aspectos relativos ao fato estudado. 
 
@@ -74,7 +73,7 @@ No trabalho, a pesquisa exploratória envolveu os seguintes procedimentos técni
 \item \textbf{Entrevistas:} Realização de entrevistas com pessoas envolvidas no cenário do problema a ser resolvido, para conhecimento da realidade atual  e sugestão de melhorias de acordo com as necessidades dos envolvidos no setor de manutenção.
 \end{itemize}
 
-Foi realizada uma extensa revisão bibliográfica, para se obter conhecimento sobre os conceitos relativos ao tema manutenção, seus tipos e modelos (Capítulo~\ref{cap-manutencao}), bem como o sistema de gestão de ativos e normas relacionadas (Seção~\ref{cap-ativos}), softwares de gestão da manutenção (Capítulo~\ref{cmms}) e medidas básicas de tolerância a falhas, como  Tempo Médio de Falha, Tempo Médio de Reparo, Tempo Médio Entre Falhas, Disponibilidade, Confiabilidade e Custo (Capítulo~\ref{indicadores}).
+Foi realizada uma extensa revisão bibliográfica, para se obter conhecimento sobre os conceitos relativos ao tema manutenção, seus tipos e modelos (Capítulo~\ref{cap-manutencao}), bem como o sistema de gestão de ativos e normas relacionadas (Capítulo~\ref{cap-ativos}), softwares de gestão da manutenção (Capítulo~\ref{cmms}) e medidas básicas de tolerância a falhas, como  Tempo Médio de Falha, Tempo Médio de Reparo, Tempo Médio Entre Falhas, Disponibilidade, Confiabilidade e Custo (Capítulo~\ref{indicadores}).
 
 Realizou-se, ainda, entrevistas para obtenção de informações sobre como são executadas as manutenções dos equipamentos da Universidade, quem são os envolvidos, as ferramentas de gestão utilizadas e outras características existentes no processo realizado pelo DIMEQ/UNB. Foi então comparado o que diz a literatura, para detectar possíveis fragilidades no processo, ao tempo de propor mudanças para informatização do processo e a criação de indicadores de desempenho da manutenção, pela abordagem quantitativa, que é feita por meio de registros e análises dos dados coletados dos equipamentos escolhidos para o estudo. 
 
@@ -82,10 +81,18 @@ Para a modelagem do sistema proposto foi utilizado como referência o documento 
 
 Os requisitos foram levantados após as entrevistas realizadas com os técnicos do CPD da DIMEQ, assim como por meio da técnica de prototipação, utilizada para melhorar a visualização de como seriam as telas do sistema e o fluxo seguido pelo usuário para utilização do sistema. Também foi utilizada a notação de modelagem de processos BPMN (Seção~\ref{bpmn}) para o mapeamento dos processos AS IS (Seção~\ref{processo-as-is}) e TO BE (Seção~\ref{to-be}), sendo o primeiro para visualização de como o processo ocorre atualmente e o segundo uma proposta de processo, com melhorias sugeridas e com embasamento na ferramenta que está sendo proposta.
 
-Para desenho do diagrama de caso de uso, modelagem do processo e dos protótipos das telas do sistema, foi utilizada a ferramenta \textit{draw.io}, escolhida, por ser gratuita e pelos vários recursos que possui, além da sua usabilidade.
+Para desenho do Diagrama de Caso de Uso, modelagem do processo e dos protótipos das telas do sistema, foi utilizada a ferramenta \textit{draw.io}, escolhida por ser gratuita e pelos vários recursos que possui, além da sua usabilidade.
 
+%---------------------------------------------------------------------------------------------%
 
+\section{Organização do Trabalho}
 
+O trabalho é composto por capítulos que podem ser divididos em três principais partes:
 
+\begin{itemize}
+	\item \textbf{Referencial Bibliográfico:} Explanado no Capítulo~\ref{cap-manutencao}, Capítulo~\ref{cap-ativos}, Capítulo~\ref{cmms} e Capítulo~\ref{indicadores}, construídos por meio de uma extensa revisão bibliográfica, com o objetivo de fornecer o embasamento teórico necessário para o entendimento dos conceitos que circundam o tema, e fornecer conhecimento para a construção da solução proposta.
+	\item \textbf{Caracterização do Problema:} Exposição do estado atual da manutenção na UnB, sua caracterização, identificação dos perfis envolvidos, e entendimento do processo seguido, no Capítulo~\ref{man-unb}. 
+	\item \textbf{Solução Proposta}: Apresentação da solução proposta pelos autores, construída a partir do estudo da atual situação da manutenção de equipamentos na universidade, utilizando-se do conhecimento adquirido na revisão bibliográfica, durante o curso de engenharia de software e eletrônica, no Capítulo~\ref{cap-solucao} e Apêndices.
+\end{itemize}
 
 %---------------------------------------------------------------------------------------------%

@@ -1,14 +1,14 @@
 \chapter{Solução Proposta}
+\label{cap-solucao}
 
 Esse capítulo discorre sobre a solução que está sendo proposta, como o sistema foi pensado, suas características, o processo que o usuário irá seguir, para se ter uma visão geral do que é o sistema e qual é o objetivo do sistema e para quem ele está sendo feito. 
-
 O seu diferencial, que será, por meio de indicadores, auxiliará os gestores em suas tomadas de decisão quanto ao setor de manutenção e os técnicos, quanto a estratégia de manutenção que será escolhida para cada tipo de equipamento. O sistema foi pensado como um módulo do software SIPAT, já existente e utilizado pela Universidade de Brasília.
 
 %------------------------------------------------------------------------------------------------------------------------%
 
 \section{Visão Geral do Sistema}
 
-A finalidade dos tópicos abaixo, é definir os requisitos de alto nível em termos de necessidades dos usuários finais, coletando, analisando e definindo as características e necessidades de alto nível do sistema. O detalhamento de como o sistema atinge essas necessidades são descritos nos casos de uso (seção~\ref{uc}).
+A finalidade dos tópicos abaixo, é definir os requisitos de alto nível em termos de necessidades dos usuários finais, coletando, analisando e definindo as características e necessidades de alto nível do sistema. O detalhamento de como o sistema atinge essas necessidades são descritos nos casos de uso (Seção~\ref{uc}).
 
 
 \textbf{Oportunidade de Negócios}
@@ -146,7 +146,7 @@ Os requisitos do sistema foram elicitados a partir das referências bibliográfi
 
 Assim como, a partir da visão do sistema na Tabela~\ref{tab-necessidade}, onde foram resumidas as necessidades e características para a modelagem do sistema. 
 
-Por ser um sistema novo para Universidade, para ajudar e facilitar o entendimento do que seria necessário, para tornar visível o que era pedido, foi, antes de elicitados os requisitos, prototipadas as telas do sistema e modelado o fluxo que seria seguido (seção~\ref{to-be}. Os protótipos encontram-se no APÊNDICE B.
+Por ser um sistema novo para Universidade, para ajudar e facilitar o entendimento do que seria necessário, para tornar visível o que era pedido, foi, antes de elicitados os requisitos, prototipadas as telas do sistema e modelado o fluxo que seria seguido (Seção~\ref{to-be}. Os protótipos encontram-se no APÊNDICE B.
 
 Abaixo estão listados os requisitos elicitados para o sistema:
 
@@ -182,7 +182,7 @@ Para descrever as funcionalidades do sistema, foram utilizados casos de uso, que
 \label{diagrama-de-caso-de-uso}
 \end{figure}
 
-Os Casos de Uso mostrados no diagrama acima, foram todos especificados, e se encontram no APÊNDICE A do trabalho.
+Os Casos de Uso mostrados no diagrama da Figura~\ref{diagrama-de-caso-de-uso}, foram todos especificados, e se encontram no APÊNDICE A do trabalho.
 
 
 %---------------------------------------------------------------------------------------------------------------%
@@ -191,7 +191,7 @@ Os Casos de Uso mostrados no diagrama acima, foram todos especificados, e se enc
 \section{Processo TO BE}
 \label{to-be}
 
-O processo TO BE é a sugestão de melhorias e remodelamento do processo AS IS, explicado na seção~\ref{processo-as-is} deste trabalho. Esse fluxo foi modelado, a partir dos protótipos e da observação e estudo das regras de negócio presentes no processo AS IS, o qual foi feito junto ao técnico da DIMEQ. 
+O processo TO BE é a sugestão de melhorias e remodelamento do processo AS IS, explicado na Seção~\ref{processo-as-is} deste trabalho. Esse fluxo foi modelado, a partir dos protótipos e da observação e estudo das regras de negócio presentes no processo AS IS, o qual foi feito junto ao técnico da DIMEQ. 
 
 A sequência das atividades foi baseada no fluxo montado com as telas prototipadas, seguindo o caminho, a partir da importação dos dados dos equipamentos, seguindo para as configurações individuais dos equipamentos, análise dos indicadores, escolha do tipo de manutenção, e decisão, tendo como base as informações mostradas no sistema (relatórios, indicadores, etc) se o equipamento será mantido, substituído, se mudará o tipo de manutenção, entre outros.
 
@@ -224,35 +224,35 @@ O fluxo principal (Figura~\ref{processo-to-be}), possui um sub processo, mostrad
 \section{KPIs da solução}
 \label{indicadores da solucao}
 
-O sistema de informatização da manutenção, proposto neste trabalho como um módulo do SIPAT conta com indicadores de desempenho da manutenção, abordados no seção~\ref{SIM}, desta forma os gerentes terão acesso imediato a dados chaves do processo da manutenção, como o desempenho dos equipamentos, o custo das manutenções, a eficiência dos programas e etc. Estas informações permitem a identificação de desvios, e o controle que integra o laço de retro alimentação, que todo sistema de gestão bem implementado deve possuir, de modo que a análise dos indicadores possa gerar decisões bem fundamentadas. Nessa ótica, abordaremos aqui a forma e a metodologia de exibição de alguns destes indicadores.
+O sistema de informatização da manutenção, proposto neste trabalho como um módulo do SIPAT conta com indicadores de desempenho da manutenção, abordados no Seção~\ref{SIM}, desta forma os gerentes terão acesso imediato a dados chaves do processo da manutenção, como o desempenho dos equipamentos, o custo das manutenções, a eficiência dos programas e etc. Estas informações permitem a identificação de desvios, e o controle que integra o laço de retro alimentação, que todo sistema de gestão bem implementado deve possuir, de modo que a análise dos indicadores possa gerar decisões bem fundamentadas. Nessa ótica, abordaremos aqui a forma e a metodologia de exibição de alguns destes indicadores.
 
-Com relação ao cálculo da confiabilidade R(t) e da disponibilidade F(t), primeiramente é necessário que a ferramenta tenha cadastrada o tempo até a falha dos equipamentos. O que já é feito automaticamente pelo sistema no atendimento as ordens de serviço. Sendo assim, é coletado o tempo em dias ou em horas que o ativo operou antes de cada falha, aqui estimamos valores do indicador Tempo Médio até a falha (TMF) de projetores multimída que necessitam de manutenção corretiva, conforme tabela~\ref{valor_tempo}. 
+Com relação ao cálculo da confiabilidade R(t) e da disponibilidade F(t), primeiramente é necessário que a ferramenta tenha cadastrada o tempo até a falha dos equipamentos. O que já é feito automaticamente pelo sistema no atendimento as ordens de serviço. Sendo assim, é coletado o tempo em dias ou em horas que o ativo operou antes de cada falha, aqui estimamos valores do indicador Tempo Médio até a falha (TMF) de projetores multimídia que necessitam de manutenção corretiva, conforme Tabela~\ref{valor_tempo}. 
 
 \graphicspath{{figuras/}}	
 \begin{table}[H]
 \centering
-\caption{Valores de tempo até a falha dos projetores multímidia. \textbf{Fonte: Autor}}
+\caption{Valores de tempo até a falha dos projetores multimídia. \textbf{Fonte: Autor}}
 \includegraphics[width=0.4\textwidth]{valores_tempo_falha.eps}
 \label{valor_tempo}
 \end{table}
 
-Pelos valores exemplificados na tabela~\ref{valor_tempo} podemos perceber que em média a cada 5 meses e 27 dias (176,5 dias), ocorre uma falha no projetor multimídia, exigindo manutenção corretiva. Neste pequeno exemplo foi coletado um total de 8 amostras, porém, a partir de 3 amostragens já é possível realizar o estudo de confiabilidade.
+Pelos valores exemplificados na Tabela~\ref{valor_tempo} podemos perceber que em média a cada 5 meses e 27 dias (176,5 dias), ocorre uma falha no projetor multimídia, exigindo manutenção corretiva. Neste pequeno exemplo foi coletado um total de 8 amostras, porém, a partir de 3 amostragens já é possível realizar o estudo de confiabilidade.
 
-No entando, antes deste estudo é necessário informar que a implicação das tarefas da função manutenção realizadas nos equipamentos respalda-se em duas situações diferentes. A primeira delas pressupõe que o condição do equipamento após a manutenção é “tão bom como novo”, o que significa que sua idade é restaurada para zero depois que uma atividade de manutenção é realizada. O segundo caminho considera que a manutenção deixa o equipamento em uma condição “tão ruim quanto velho”, significando que sua idade é a mesma depois de realizada a manutenção se comparada com a situação imediatamente antes da manutenção. No nosso exemplo de confiabilidade nos basearemos na primeira opção, ou seja, a de que após a manutenção o componente terá sua idade restaurada. Para realizar os cálculos dos parâmetros, foi utilizado o software iterativo de alta performance voltado para o cálculo númerico, o MATLAB, versão R2016a.
+No entanto, antes deste estudo é necessário informar que a implicação das tarefas da função manutenção realizadas nos equipamentos respalda-se em duas situações diferentes. A primeira delas pressupõe que o condição do equipamento após a manutenção é “tão bom como novo”, o que significa que sua idade é restaurada para zero depois que uma atividade de manutenção é realizada. O segundo caminho considera que a manutenção deixa o equipamento em uma condição “tão ruim quanto velho”, significando que sua idade é a mesma depois de realizada a manutenção se comparada com a situação imediatamente antes da manutenção. No nosso exemplo de confiabilidade nos basearemos na primeira opção, ou seja, a de que após a manutenção o componente terá sua idade restaurada. Para realizar os cálculos dos parâmetros, foi utilizado o software iterativo de alta performance voltado para o cálculo numérico, o MATLAB, versão R2016a.
 
-Dito isto, com os dados de amostragem de tempo até a falha constantes na tabela~\ref{valor_tempo}, são calculados os parâmetros (eta e beta) necessários para obter a distribuição de Weibull explicitada pela fórmula explicada na subseção~\ref{nivel 1}, este calculo pode ser feito usando a função nativa do MATLAB Weibul parameter estimates (WBLFIT), conforme a figura\ref{parametros_weibull}, veja que além desta função foi usado o comando [parmhat] = wblfit(tmf), que retorna as estimativas de máxima verossimilhança, parmhat, dos parâmetros da distribuição Weibull dados os valores nos dados vetoriais, o que deve ser positivo. Parmhat(1) estima o parâmetro Weibull $ \eta $, e parmhat(2) estima o parametro Weibull $ \beta $. 
+Dito isto, com os dados de amostragem de tempo até a falha constantes na Tabela~\ref{valor_tempo}, são calculados os parâmetros (eta e beta) necessários para obter a distribuição de Weibull explicitada pela fórmula explicada na Subseção~\ref{nivel 1}, este calculo pode ser feito usando a função nativa do MATLAB Weibul parameter estimates (WBLFIT), conforme a Figura\ref{parametros_weibull}, veja que além desta função foi usado o comando [parmhat] = wblfit(tmf), que retorna as estimativas de máxima verossimilhança, parmhat, dos parâmetros da distribuição Weibull dados os valores nos dados vetoriais, o que deve ser positivo. Parmhat(1) estima o parâmetro Weibull $ \eta $, e parmhat(2) estima o parâmetro Weibull $ \beta $. 
 
 \graphicspath{{figuras/}}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{parametros_weibull.eps}
-\caption{Exemplo de comandos do Software MATLAB, versão R2016a, para o cálculo dos parâmetros(eta e beta) da fórmula de weibull \textbf{Fonte: Autor}}
+\caption{Exemplo de comandos do Software MATLAB, versão R2016a, para o cálculo dos parâmetros($ \eta $ e $ \beta $) da fórmula de weibull \textbf{Fonte: Autor}}
 \label{parametros_weibull}
 \end{figure}
 
-O parâmetro de forma $ \beta $ indica se a taxa de falha está crescente, constante ou decrescente. Se $ \beta $ < 1, é um indicativo de que o produto está com a taxa de falha decrescente. Este cenário é típico da chamada “mortalidade infantil”, indicando que o produto falha logo no seu período de \lq\lq nascimento\rq\rq. Se $ \beta $ = 1, é um indicativo de falha constante. São componentes que após sobreviverem ao \lq\lq nascimento\rq\rq possuem uma taxa de falha constante. Se $ \beta $ > 1, temos então a situação de uma taxa de falha crescente. Este cenário é típico de produtos que falham por desgaste como é o nosso caso ($ \beta $ = 7,01) em que o beta é muito maior do que 1, indicando que o projetor multimídia falha por fadiga após um determinado tempo.
+O parâmetro de forma $ \beta $ indica se a taxa de falha está crescente, constante ou decrescente. Se $ \beta $ < 1, é um indicativo de que o produto está com a taxa de falha decrescente. Este cenário é típico da chamada “mortalidade infantil”, indicando que o produto falha logo no seu período de \lq\lq nascimento\rq\rq. Se $ \beta $ = 1, é um indicativo de falha constante. São componentes que após sobreviverem ao {\lq\lq nascimento\rq\rq} possuem uma taxa de falha constante. Se $ \beta $ > 1, temos então a situação de uma taxa de falha crescente. Este cenário é típico de produtos que falham por desgaste como é o nosso caso ($ \beta $ = 7,01) em que o beta é muito maior do que 1, indicando que o projetor multimídia falha por fadiga após um determinado tempo.
 
-A característica de vida, ou parâmetro $ \alpha $ é uma medida de escala ou propagação com relação à distribuição dos dados. Ele representa o número na escala do eixo X em que 62,5\% dos projetores multimídia falharam. Fazendo a análise de confiabilidade para nosso exemplo em que $ \alpha $ = 189.4774, significa dizermos que 37,5\% dos projetores multimídia sobrevivem após um período de 189.4774 dias, ou melhor dizendo, após 6 meses e 9 dias.
+A característica de vida, ou parâmetro $ \eta $ é uma medida de escala ou propagação com relação à distribuição dos dados. Ele representa o número na escala do eixo X em que 62,5\% dos projetores multimídia falharam. Fazendo a análise de confiabilidade para nosso exemplo em que $ \eta $ = 189.4774, significa dizermos que 37,5\% dos projetores multimídia sobrevivem após um período de 189.4774 dias, ou melhor dizendo, após 6 meses e 9 dias.
 
 Encontrados os valores dos parâmetros (eta e beta) já é possível obter os gráficos da confiabilidade R(t) e da Disponibilidade F(t), conforme os comandos dispostos no Editor de textos do MATLAB conforme a Figura~\ref{plotweibull}, os resultados desses comandos podem ser evidenciados na Figura~\ref{grafico_confiabilidade}. 
 
@@ -278,9 +278,10 @@ Outro exemplo de um possível comportamento do gráfico da Confiabilidade e da p
 \begin{figure}[H]
 \centering
 \includegraphics[width=1.0\textwidth]{graficos_probabilidade_de_falhas_e_confiabilidade.eps}
-\caption{Exemplo de comportamento dos graficos de probabilidade de falhas e Confiabilidade \textbf{Fonte: Autor}}
+\caption{Exemplo de comportamento dos gráficos de probabilidade de falhas e Confiabilidade \textbf{Fonte: Autor}}
 \label{graficos_probabilidade_faha_confiabilidade}
 \end{figure}
 
 
 %---------------------------------------------------------------------------------------------------------------%
+
